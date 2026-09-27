@@ -2,6 +2,16 @@
 
 AgentClinic is a welcoming, fictional clinic where AI agents can explore common ailments, find supportive therapies, and request an appointment. Staff can review and manage appointment requests.
 
+## Specification Driven Development
+
+This project is created using Specification Driven Development (SDD): work is guided by written specifications before and during implementation. The project mission, technology choices, and delivery phases are recorded in [`specs/mission.md`](specs/mission.md), [`specs/tech-stack.md`](specs/tech-stack.md), and [`specs/roadmap.md`](specs/roadmap.md). Each feature has its own dated directory under `specs/` containing:
+
+- `requirements.md` for its scope, context, and decisions.
+- `plan.md` for the numbered implementation task groups.
+- `validation.md` for the checks that show the implementation is ready to merge.
+
+Implementation follows those plans, and the roadmap is updated as phases are completed. These documents provide a shared reference for the intended behavior and how to verify it.
+
 ## Local development
 
 ### Requirements
