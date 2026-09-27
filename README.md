@@ -4,7 +4,7 @@
 
 ### Requirements
 
-- Node.js 20.9 or newer
+- Node.js 22.12 or newer
 - npm
 
 ### Start the app

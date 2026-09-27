@@ -7,6 +7,7 @@
 - **Data store:** A local SQLite database for clinic, therapy, and appointment data.
 - **Database access:** Prisma for schema management and typed queries, configured for SQLite.
 - **Validation:** Zod for validating form input and data at application boundaries.
+- **Test runner:** Vitest for automated validation of application behavior and data handling.
 - **Deployment:** A platform that supports Next.js and persistent storage for the SQLite database file; document required environment variables and storage configuration.
 
 ## Why this stack
@@ -16,6 +17,7 @@ This is a widely used TypeScript-first web stack with server rendering and serve
 ## Engineering constraints
 
 - Keep TypeScript strict and share types at application boundaries.
+- Use Vitest for automated validation; keep tests focused on observable behavior and important data rules.
 - Enforce appointment rules on the server; browser validation is for usability, not authority.
 - Keep secrets and database credentials out of client code and version control.
 - Use semantic HTML, keyboard-operable controls, and responsive layouts.
