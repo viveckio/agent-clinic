@@ -8,6 +8,8 @@ Create the Next.js, React, and TypeScript application, add the shared visual fou
 
 **Done when:** the app runs locally and its basic shell works in modern desktop and mobile browser sizes.
 
+**Status: Complete.** The Next.js app shell, neutral placeholder page, responsive layout, shared style tokens, and local setup instructions are in place. TypeScript and the Webpack production build pass.
+
 ## Phase 2 — Introduce the clinic identity
 
 Build the landing page with the clinic’s purpose, a clear tone, and navigation to care information.
