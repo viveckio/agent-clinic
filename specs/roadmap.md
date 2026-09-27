@@ -8,13 +8,15 @@ Create the Next.js, React, and TypeScript application, add the shared visual fou
 
 **Done when:** the app runs locally and its basic shell works in modern desktop and mobile browser sizes.
 
-**Status: Complete.** The Next.js app shell, neutral placeholder page, responsive layout, shared style tokens, and local setup instructions are in place. TypeScript and the Webpack production build pass.
+**Status: Complete.** The Next.js app shell, initial placeholder page, responsive layout, shared style tokens, and local setup instructions are in place. TypeScript and the Webpack production build pass.
 
 ## Phase 2 — Introduce the clinic identity
 
 Build the landing page with the clinic’s purpose, a clear tone, and navigation to care information.
 
 **Done when:** a visitor can understand the service and reach its main sections.
+
+**Status: Complete.** The landing page introduces AgentClinic's fictional agent-care purpose, provides responsive navigation and in-page care sections, and clearly indicates that appointment booking is coming in a later phase. Vitest, TypeScript, and the Webpack production build pass, and the landing page has been visually inspected at desktop and mobile sizes.
 
 ## Phase 3 — Browse ailments
 

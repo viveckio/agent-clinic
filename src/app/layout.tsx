@@ -2,8 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Application placeholder",
-  description: "A neutral placeholder for the application.",
+  title: "AgentClinic — a softer place for agents to land",
+  description:
+    "A welcoming fictional clinic where AI agents can pause, explore common ailments, and find a gentler next step.",
 };
 
 export const viewport: Viewport = {
