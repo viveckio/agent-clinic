@@ -255,3 +255,95 @@ h1 em { color: var(--green); font-weight: 400; }
   .care-site-header .site-nav .nav-visit { padding: 0.5rem 0.55rem; }
   .care-site-header .brand { gap: 0.4rem; }
 }
+
+/* Booking and staff MVP */
+.footer-note a { color: inherit; text-underline-offset: 3px; }
+.booking-intro { padding-bottom: 2.2rem; }
+.booking-back-link { margin: 1.1rem 0 0; color: var(--green-dark); font-size: 0.82rem; }
+.booking-back-link a { text-underline-offset: 3px; }
+.booking-panel { width: min(100% - 3.5rem, 760px); margin: 0 auto 1.4rem; padding: clamp(1.25rem, 5vw, 3.2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--white); }
+.booking-form { display: grid; gap: 1.15rem; }
+.form-field { display: grid; gap: 0.45rem; }
+.form-field label { color: var(--ink); font-size: 0.82rem; font-weight: 700; }
+.form-field input, .form-field select { width: 100%; min-height: 48px; padding: 0.7rem 0.8rem; border: 1px solid #bfcac0; border-radius: 0.45rem; background: #fff; color: var(--ink); font: inherit; font-size: 0.9rem; }
+.form-field input:focus, .form-field select:focus { outline: 3px solid rgb(191 117 76 / 42%); outline-offset: 2px; border-color: #8a6049; }
+.form-field [aria-invalid="true"] { border-color: #a53f36; }
+.field-hint { margin: 0.1rem 0 0; color: #6d7b71; font-size: 0.73rem; line-height: 1.55; }
+.field-error { margin: 0; color: #9b342e; font-size: 0.76rem; line-height: 1.45; }
+.booking-privacy { margin: 0; color: #66766b; font-size: 0.78rem; line-height: 1.6; }
+.form-submit { width: fit-content; cursor: pointer; }
+.form-submit:disabled { cursor: progress; opacity: 0.7; }
+.form-message { padding: 0.85rem 1rem; border-radius: 0.6rem; font-size: 0.84rem; line-height: 1.6; }
+.form-message-error { border: 1px solid #e2b9b0; background: #fff1ee; color: #812f29; }
+.form-message-success { border: 1px solid #b9d0bb; background: #edf5ed; color: #294d38; }
+.form-success { display: grid; justify-items: start; gap: 0.9rem; }
+.form-success h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; letter-spacing: -0.05em; }
+.form-success > p:not(.eyebrow) { max-width: 38rem; margin: 0; color: var(--ink-soft); line-height: 1.75; }
+.success-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--green-pale); color: var(--green-dark); font-size: 1.3rem; }
+.reference-number { font-size: 0.78rem; }
+.reference-number strong { letter-spacing: 0.08em; }
+.fictional-note { width: min(100% - 3.5rem, 760px); margin: 0 auto 4rem; color: #6d7b71; font-size: 0.72rem; line-height: 1.6; text-align: center; }
+.staff-login-intro { padding-bottom: 2rem; }
+.staff-login-panel { max-width: 540px; margin-bottom: 5rem; }
+.staff-login-fields { display: grid; gap: 1.15rem; margin: 0; padding: 0; border: 0; }
+.staff-login-fields:disabled { opacity: 0.58; }
+.staff-heading-row { display: flex; align-items: start; justify-content: space-between; gap: 1.5rem; }
+.staff-heading-row h1 { max-width: 11ch; }
+.staff-dashboard-intro { padding-bottom: 2.2rem; }
+.staff-dashboard-intro > p:last-child { max-width: 38rem; margin: 1rem 0 0; color: var(--ink-soft); line-height: 1.7; }
+.staff-main { padding-bottom: 4rem; }
+.staff-dashboard { width: min(100% - 3.5rem, 1180px); margin: 0 auto; }
+.staff-summary { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 1.5rem; }
+.staff-summary article { min-width: 170px; display: grid; gap: 0.3rem; padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: 0.75rem; background: var(--white); color: var(--ink-soft); font-size: 0.78rem; }
+.summary-count { color: var(--green-dark); font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; }
+.staff-filters { display: grid; grid-template-columns: minmax(180px, 1.5fr) repeat(3, minmax(140px, 1fr)) auto; align-items: end; gap: 0.8rem; margin-bottom: 1.4rem; padding: 1rem; border: 1px solid var(--line); border-radius: 0.8rem; background: #f1efe9; }
+.staff-filters .form-field label { font-size: 0.72rem; }
+.staff-filters .form-field input, .staff-filters .form-field select { min-height: 42px; padding: 0.5rem 0.6rem; font-size: 0.8rem; }
+.staff-filter-submit { min-height: 42px; padding: 0.6rem 0.85rem; font-size: 0.75rem; white-space: nowrap; }
+.staff-clear-link { grid-column: 1 / -1; justify-self: start; color: var(--green-dark); font-size: 0.75rem; text-underline-offset: 3px; }
+.appointment-list { display: grid; gap: 0.85rem; }
+.appointment-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: clamp(1rem, 3vw, 1.5rem); border: 1px solid var(--line); border-radius: 0.85rem; background: var(--white); }
+.appointment-card-main { min-width: 0; }
+.appointment-card-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; color: #68776d; font-size: 0.75rem; }
+.status-badge { padding: 0.28rem 0.58rem; border-radius: 999px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.status-pending { background: #fbecd8; color: #75552e; }
+.status-confirmed { background: #e2efe3; color: #31593a; }
+.status-cancelled { background: #eeeae7; color: #746761; }
+.appointment-card h2 { margin: 0.65rem 0 0.1rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; font-weight: 400; letter-spacing: -0.035em; }
+.appointment-email { color: var(--green-dark); font-size: 0.78rem; text-underline-offset: 3px; }
+.appointment-care-item { margin: 0.6rem 0 0; color: var(--ink-soft); font-size: 0.8rem; }
+.appointment-care-item a { color: var(--green-dark); text-underline-offset: 3px; }
+.appointment-created { margin: 0.4rem 0 0; color: #7c8980; font-size: 0.68rem; }
+.appointment-actions { display: flex; flex-wrap: wrap; flex: 0 0 auto; align-items: center; gap: 0.55rem; }
+.appointment-actions form { margin: 0; }
+.button-confirm, .button-outline { min-height: 40px; padding: 0.55rem 0.85rem; font-size: 0.75rem; cursor: pointer; }
+.button-confirm { border-color: var(--green); background: var(--green); color: var(--white); }
+.button-confirm:hover { background: var(--green-dark); }
+.button-outline { border-color: #b9c8bc; background: transparent; color: var(--green-dark); }
+.button-outline:hover { background: var(--green-pale); }
+.cancelled-note { color: #7c8980; font-size: 0.72rem; }
+.staff-empty { display: grid; justify-items: center; padding: 4rem 1rem; border: 1px dashed #bcc8bf; border-radius: 0.8rem; text-align: center; }
+.staff-empty > span { color: #a76a4d; font-size: 1.6rem; }
+.staff-empty h2 { margin: 0.7rem 0 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; font-weight: 400; }
+.staff-empty p { color: var(--ink-soft); font-size: 0.83rem; line-height: 1.6; }
+.staff-result-note { margin: 0.25rem 0 0; color: #748177; font-size: 0.7rem; }
+
+@media (max-width: 760px) {
+  .booking-panel, .fictional-note, .staff-dashboard { width: min(100% - 2rem, 600px); }
+  .booking-panel { margin-bottom: 1.2rem; }
+  .fictional-note { margin-bottom: 3rem; }
+  .staff-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .staff-filters .form-field:first-child { grid-column: 1 / -1; }
+  .staff-filter-submit { align-self: end; }
+  .appointment-card { align-items: flex-start; flex-direction: column; }
+  .appointment-actions { align-self: stretch; }
+}
+@media (max-width: 420px) {
+  .staff-heading-row { align-items: center; gap: 0.6rem; }
+  .staff-heading-row .button { padding: 0.55rem 0.7rem; font-size: 0.72rem; }
+  .staff-filters { grid-template-columns: 1fr; }
+  .staff-filters .form-field:first-child { grid-column: auto; }
+  .staff-filter-submit { justify-self: start; }
+  .staff-clear-link { grid-column: auto; }
+  .appointment-actions { width: 100%; }
+}

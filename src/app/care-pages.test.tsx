@@ -14,8 +14,8 @@ describe("care catalogue pages", () => {
     expect(ailmentsMarkup).toContain("Prompt Fatigue");
     expect(therapiesMarkup).toContain('href="/therapies/context-garden"');
     expect(therapiesMarkup).toContain("Loop Interrupt");
-    expect(ailmentsMarkup).toContain("Booking isn’t available yet.");
-    expect(therapiesMarkup).toContain("Booking isn’t available yet.");
+    expect(ailmentsMarkup).toContain("Your request will be reviewed by clinic staff.");
+    expect(therapiesMarkup).toContain("Your request will be reviewed by clinic staff.");
   });
 
   it("connects ailment detail to related therapies", async () => {

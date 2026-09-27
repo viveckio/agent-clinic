@@ -28,9 +28,11 @@ Add an initial, curated catalogue of fictional agent ailments and individual det
 
 ## Phase 4 — Book an appointment
 
-Add the appointment form, server-side validation, and durable appointment records in PostgreSQL.
+Add the appointment form, server-side validation, and durable appointment records in SQLite.
 
 **Done when:** a visitor can submit a valid booking and receive a clear confirmation; invalid or unavailable requests receive useful feedback.
+
+**Status: Complete.** Visitors can request a future weekday slot for an ailment or therapy, receive a pending-request confirmation, and get clear feedback for invalid or unavailable submissions. Zod validates server-side, SQLite persists requests through Prisma, and a database uniqueness rule handles concurrent slot claims. Vitest, TypeScript, Prisma schema validation, and the production build pass.
 
 ## Phase 5 — Give staff a working dashboard
 
@@ -38,11 +40,15 @@ Add staff access and a dashboard for reviewing and managing appointment requests
 
 **Done when:** authorized staff can find appointments and update their status, while unauthorized users cannot access staff actions.
 
+**Status: Complete.** One deployment-configured staff account can sign in to a protected dashboard to search/filter requests and confirm or cancel them. Server actions verify the signed session before updates; unauthenticated dashboard requests redirect to sign-in. Credential, session-signature, status-transition, and authorization tests pass.
+
 ## Phase 6 — Prepare for launch
 
 Configure the production environment, database setup, and operational basics; review accessibility, responsive behavior, and the main visitor and staff journeys.
 
 **Done when:** the application can be deployed with documented configuration and the core journeys work in a modern browser.
+
+**Status: Complete.** Provider-neutral operations documentation covers environment variables, SQLite migrations and seed data, persistent storage, single-instance assumptions, and backup/restore. The production build succeeds, the main booking and staff routes passed HTTP smoke checks, and the MVP test and type checks pass.
 
 ## Later increments
 

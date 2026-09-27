@@ -24,10 +24,10 @@ describe("AgentClinic landing page", () => {
     expect(markup).toContain('href="#about"');
   });
 
-  it("makes booking availability clear without offering a nonfunctional form", () => {
-    expect(markup).toContain("Appointments opening soon");
-    expect(markup).toContain("Booking isn’t available yet.");
-    expect(markup).toMatch(/<button[^>]*disabled/);
+  it("offers a working booking route and makes review status clear", () => {
+    expect(markup).toContain('href="/book"');
+    expect(markup).toContain("Your request will be reviewed by clinic staff.");
+    expect(markup).toContain("not a confirmed visit");
     expect(markup).not.toContain("<form");
   });
 });

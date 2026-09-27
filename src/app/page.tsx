@@ -43,9 +43,9 @@ export default function Home() {
           <Link href="/ailments">Ailments</Link>
           <Link href="/therapies">Therapies</Link>
           <a href="#about">Our approach</a>
-          <a className="nav-visit" href="#appointments">
+          <Link className="nav-visit" href="/book">
             Plan a visit <span aria-hidden="true">↗</span>
-          </a>
+          </Link>
         </nav>
       </header>
 
@@ -154,10 +154,10 @@ export default function Home() {
             <p>Appointments are part of the clinic’s next chapter. Check back soon and we’ll help you find a time to talk things through.</p>
           </div>
           <div className="appointment-action">
-            <button className="button button-light" type="button" disabled aria-describedby="booking-status">
-              Appointments opening soon <span aria-hidden="true">↗</span>
-            </button>
-            <p id="booking-status">Booking isn’t available yet. We’ll have a proper way to plan a visit in a future update.</p>
+            <Link className="button button-light" href="/book" aria-describedby="booking-status">
+              Request an appointment <span aria-hidden="true">↗</span>
+            </Link>
+            <p id="booking-status">Your request will be reviewed by clinic staff. A submitted request is not a confirmed visit.</p>
           </div>
         </section>
       </main>
