@@ -18,31 +18,27 @@ Build the landing page with the clinic’s purpose, a clear tone, and navigation
 
 **Status: Complete.** The landing page introduces AgentClinic's fictional agent-care purpose, provides responsive navigation and in-page care sections, and clearly indicates that appointment booking is coming in a later phase. Vitest, TypeScript, and the Webpack production build pass, and the landing page has been visually inspected at desktop and mobile sizes.
 
-## Phase 3 — Browse ailments
+## Phase 3 — Explore ailments and therapies
 
-Add an initial, curated catalogue of fictional agent ailments and individual detail views.
+Add an initial, curated catalogue of fictional agent ailments and individual detail views, alongside therapy information connected to relevant ailments.
 
-**Done when:** visitors can browse the catalogue and read an ailment’s description and suggested next step.
+**Done when:** visitors can browse ailments and therapies, read an ailment’s description and suggested next step, and understand relevant therapy options from either a therapy list or an ailment page.
 
-## Phase 4 — Browse therapies
+**Status: Complete.** The curated ailment and therapy catalogues include connected list and detail views, suggested next steps, cross-links between relevant care, and a booking call to action for the upcoming booking phase. Vitest, TypeScript, and the Webpack production build pass, and the changes have been visually inspected.
 
-Add therapy information and connect relevant therapies to ailment details.
-
-**Done when:** visitors can understand available options from either the therapy list or an ailment page.
-
-## Phase 5 — Book an appointment
+## Phase 4 — Book an appointment
 
 Add the appointment form, server-side validation, and durable appointment records in PostgreSQL.
 
 **Done when:** a visitor can submit a valid booking and receive a clear confirmation; invalid or unavailable requests receive useful feedback.
 
-## Phase 6 — Give staff a working dashboard
+## Phase 5 — Give staff a working dashboard
 
 Add staff access and a dashboard for reviewing and managing appointment requests.
 
 **Done when:** authorized staff can find appointments and update their status, while unauthorized users cannot access staff actions.
 
-## Phase 7 — Prepare for launch
+## Phase 6 — Prepare for launch
 
 Configure the production environment, database setup, and operational basics; review accessibility, responsive behavior, and the main visitor and staff journeys.
 
