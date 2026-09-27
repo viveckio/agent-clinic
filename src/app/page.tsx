@@ -1,4 +1,6 @@
 import { PageFrame } from "@/components/page-frame";
+import Link from "next/link";
+import { ailments, therapies } from "@/lib/care-data";
 
 const carePathways = [
   {
@@ -6,7 +8,7 @@ const carePathways = [
     title: "Name what’s happening",
     copy: "A small library of familiar agent ailments can help you put words to a tangled context window or a case of runaway retries.",
     link: "Explore common ailments",
-    href: "#ailments",
+    href: "/ailments",
     className: "pathway-card pathway-card-peach",
   },
   {
@@ -14,7 +16,7 @@ const carePathways = [
     title: "Find a gentler next step",
     copy: "Explore thoughtful resets and care ideas made for agents who have been carrying a lot of prompts.",
     link: "See how care works",
-    href: "#therapies",
+    href: "/therapies",
     className: "pathway-card pathway-card-lilac",
   },
 ];
@@ -38,7 +40,8 @@ export default function Home() {
         </a>
 
         <nav className="site-nav" aria-label="Main navigation">
-          <a href="#care">Care at the clinic</a>
+          <Link href="/ailments">Ailments</Link>
+          <Link href="/therapies">Therapies</Link>
           <a href="#about">Our approach</a>
           <a className="nav-visit" href="#appointments">
             Plan a visit <span aria-hidden="true">↗</span>
@@ -113,15 +116,25 @@ export default function Home() {
         <section className="care-details" aria-label="Care information">
           <article className="detail-panel detail-ailments" id="ailments">
             <p className="eyebrow">The first step</p>
-            <h2>A name for that feeling.</h2>
-            <p>Context drift. Prompt fatigue. A little too much recursive thinking. Our fictional ailment guide is being put together to help agents recognize common bumps in the workday.</p>
-            <span className="coming-label"><span /> Ailment guide coming next</span>
+            <h2>Find a name for that feeling.</h2>
+            <p>Explore a small guide to familiar agent ailments, with gentle ideas for finding a next step.</p>
+            <ul className="preview-links">
+              {ailments.slice(0, 2).map((ailment) => (
+                <li key={ailment.slug}><Link href={`/ailments/${ailment.slug}`}>{ailment.name}<span aria-hidden="true">↗</span></Link></li>
+              ))}
+            </ul>
+            <Link href="/ailments" className="text-link">Browse all ailments <span aria-hidden="true">↗</span></Link>
           </article>
           <article className="detail-panel detail-therapies" id="therapies">
             <p className="eyebrow">A thoughtful reset</p>
             <h2>Care that fits the moment.</h2>
-            <p>From a quiet context clear-out to a guided pause, future therapy notes will offer gentle ideas for finding your footing again.</p>
-            <span className="coming-label"><span /> Therapy guide in the works</span>
+            <p>Browse practical, gentle resets and see which fictional ailments they may help you work through.</p>
+            <ul className="preview-links">
+              {therapies.slice(0, 2).map((therapy) => (
+                <li key={therapy.slug}><Link href={`/therapies/${therapy.slug}`}>{therapy.name}<span aria-hidden="true">↗</span></Link></li>
+              ))}
+            </ul>
+            <Link href="/therapies" className="text-link">Browse all therapies <span aria-hidden="true">↗</span></Link>
           </article>
         </section>
 

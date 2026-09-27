@@ -182,3 +182,76 @@ h1 em { color: var(--green); font-weight: 400; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
+
+/* Ailment and therapy catalogue */
+.care-main { display: block; }
+.care-page-intro, .care-catalog, .care-detail-page, .care-not-found { width: min(100% - 3.5rem, 1180px); margin-right: auto; margin-left: auto; }
+.care-page-intro { padding: clamp(3.5rem, 8vw, 6.5rem) 0 3rem; }
+.care-page-intro h1, .care-detail-page > h1, .care-not-found h1 { max-width: 15ch; margin: 0; font-size: clamp(3rem, 7vw, 5.8rem); letter-spacing: -0.065em; line-height: 1; }
+.care-page-intro > p:not(.eyebrow) { max-width: 42rem; margin: 1.4rem 0 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.8; }
+.care-switcher { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.6rem; }
+.care-switcher a { padding: 0.6rem 0.95rem; border: 1px solid #b9c8bc; border-radius: 999px; color: var(--green-dark); font-size: 0.8rem; font-weight: 700; text-decoration: none; }
+.care-switcher a:hover { background: var(--green-pale); }
+.care-catalog { padding: 2rem 0 5rem; border-top: 1px solid var(--line); }
+.catalog-heading { margin-bottom: 1.6rem; }
+.catalog-heading .eyebrow { margin-bottom: 0.55rem; }
+.catalog-heading h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3.5vw, 2.7rem); font-weight: 400; letter-spacing: -0.045em; }
+.care-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.care-card { min-height: 235px; display: flex; flex-direction: column; align-items: flex-start; padding: clamp(1.35rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--white); }
+.care-card .eyebrow { margin-bottom: 0.7rem; }
+.care-card h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; font-weight: 400; letter-spacing: -0.04em; }
+.care-card h2 a { text-decoration: none; text-underline-offset: 4px; }
+.care-card h2 a:hover { text-decoration: underline; }
+.care-card-summary { margin: 0.65rem 0 1.3rem; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.7; }
+.care-card > .text-link { margin-top: auto; }
+.care-detail-page { padding: 3rem 0 1rem; }
+.back-link { display: inline-block; margin-bottom: 3rem; color: var(--green-dark); font-size: 0.83rem; font-weight: 700; text-underline-offset: 4px; }
+.care-detail-page > .eyebrow { margin-bottom: 0.75rem; }
+.care-detail-lede { max-width: 44rem; margin: 1.2rem 0 3rem; color: var(--ink-soft); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.2rem, 2.4vw, 1.65rem); line-height: 1.55; }
+.care-detail-copy { max-width: 48rem; display: grid; gap: 1.5rem; }
+.care-detail-copy > section { padding: clamp(1.3rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--white); }
+.care-detail-copy h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; font-weight: 400; letter-spacing: -0.035em; }
+.care-detail-copy p { margin: 0.75rem 0 0; color: var(--ink-soft); font-size: 0.94rem; line-height: 1.8; }
+.care-bullet-list { margin: 0.9rem 0 0; padding-left: 1.3rem; color: var(--ink-soft); }
+.care-bullet-list li { padding: 0.3rem 0 0.3rem 0.25rem; line-height: 1.65; }
+.next-step-panel { background: var(--green-pale) !important; }
+.next-step-panel .eyebrow { margin-bottom: 0.55rem; }
+.related-care { max-width: 48rem; padding: 3rem 0 4.5rem; }
+.related-list { margin: 0 0 1.4rem; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.related-list li { border-bottom: 1px solid var(--line); }
+.related-list a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0.25rem; color: var(--green-dark); text-decoration: none; }
+.related-list a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+.related-list a > span:first-child { display: grid; gap: 0.25rem; }
+.related-list strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; font-weight: 400; }
+.related-list small { color: var(--ink-soft); font-size: 0.8rem; line-height: 1.5; }
+.care-booking { margin-top: 0; }
+.care-site-header .site-nav > a:first-child, .care-site-header .site-nav > a:nth-child(2) { display: inline-flex; }
+.care-not-found { min-height: 58vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding-top: 4rem; padding-bottom: 4rem; }
+.care-not-found > p:not(.eyebrow) { max-width: 35rem; color: var(--ink-soft); line-height: 1.75; }
+.not-found-links { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+.not-found-links .button-primary { min-height: 45px; }
+.preview-links { display: grid; gap: 0.45rem; margin: 0 0 1rem; padding: 0; list-style: none; }
+.preview-links a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--green-dark); font-size: 0.8rem; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 760px) {
+  .care-page-intro, .care-catalog, .care-detail-page, .care-not-found { width: min(100% - 2rem, 600px); }
+  .care-page-intro { padding-top: 3.5rem; }
+  .care-card-grid { grid-template-columns: 1fr; }
+  .care-card { min-height: 205px; }
+  .care-site-header .site-nav { gap: 0.7rem; }
+  .care-site-header .site-nav > a:first-child, .care-site-header .site-nav > a:nth-child(2) { display: inline-flex; }
+  .care-site-header .site-nav a { font-size: 0.72rem; }
+  .care-site-header .site-nav .nav-visit { padding: 0.55rem 0.7rem; }
+  .care-site-header .nav-visit span { display: none; }
+  .care-detail-page { padding-top: 2rem; }
+  .back-link { margin-bottom: 2rem; }
+  .care-detail-lede { margin-bottom: 2rem; }
+  .related-care { padding-bottom: 3rem; }
+}
+@media (max-width: 380px) {
+  .care-site-header { gap: 0.6rem; }
+  .care-site-header .site-nav { gap: 0.45rem; }
+  .care-site-header .site-nav a { font-size: 0.67rem; }
+  .care-site-header .site-nav .nav-visit { padding: 0.5rem 0.55rem; }
+  .care-site-header .brand { gap: 0.4rem; }
+}

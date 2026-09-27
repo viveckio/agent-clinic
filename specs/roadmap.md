@@ -24,6 +24,8 @@ Add an initial, curated catalogue of fictional agent ailments and individual det
 
 **Done when:** visitors can browse ailments and therapies, read an ailment’s description and suggested next step, and understand relevant therapy options from either a therapy list or an ailment page.
 
+**Status: Complete.** The curated ailment and therapy catalogues include connected list and detail views, suggested next steps, cross-links between relevant care, and a booking call to action for the upcoming booking phase. Vitest, TypeScript, and the Webpack production build pass, and the changes have been visually inspected.
+
 ## Phase 4 — Book an appointment
 
 Add the appointment form, server-side validation, and durable appointment records in PostgreSQL.
